@@ -1,0 +1,3 @@
+/home/pepoberes/TP2/build/CMakeFiles/drones.dir
+/home/pepoberes/TP2/build/CMakeFiles/edit_cache.dir
+/home/pepoberes/TP2/build/CMakeFiles/rebuild_cache.dir

@@ -1,0 +1,1 @@
+/usr/bin/c++ CMakeFiles/drones.dir/examples/main.cpp.o CMakeFiles/drones.dir/src/Drone.cpp.o -o drones 
