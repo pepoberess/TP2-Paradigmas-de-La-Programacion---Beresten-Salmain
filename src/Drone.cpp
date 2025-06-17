@@ -11,8 +11,8 @@ void Drone::fly(){
 
     std::lock(zones[left], zones[right]);
 
-    std::unique_lock<std::mutex> lock_izq(zones[left], std::adopt_lock);
-    std::unique_lock<std::mutex> lock_der(zones[right], std::adopt_lock);
+    std::unique_lock<std::mutex> lock_left(zones[left], std::adopt_lock);
+    std::unique_lock<std::mutex> lock_right(zones[right], std::adopt_lock);
 
     {
         std::unique_lock<std::mutex> lock(print_mtx);

@@ -122,7 +122,7 @@ CMAKE_PROJECT_DESCRIPTION:STATIC=
 CMAKE_PROJECT_HOMEPAGE_URL:STATIC=
 
 //Value Computed by CMake
-CMAKE_PROJECT_NAME:STATIC=DronesTP2
+CMAKE_PROJECT_NAME:STATIC=TP2
 
 //Path to a program.
 CMAKE_RANLIB:FILEPATH=/usr/bin/ranlib
@@ -197,6 +197,15 @@ DronesTP2_IS_TOP_LEVEL:STATIC=ON
 
 //Value Computed by CMake
 DronesTP2_SOURCE_DIR:STATIC=/home/pepoberes/TP2
+
+//Value Computed by CMake
+TP2_BINARY_DIR:STATIC=/home/pepoberes/TP2/build
+
+//Value Computed by CMake
+TP2_IS_TOP_LEVEL:STATIC=ON
+
+//Value Computed by CMake
+TP2_SOURCE_DIR:STATIC=/home/pepoberes/TP2
 
 
 ########################

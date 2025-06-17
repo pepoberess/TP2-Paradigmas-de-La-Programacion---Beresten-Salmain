@@ -64,6 +64,7 @@ CMAKE_BINARY_DIR = /home/pepoberes/TP2/build
 
 # The main recursive "all" target.
 all: CMakeFiles/drones.dir/all
+all: CMakeFiles/SR.dir/all
 .PHONY : all
 
 # The main recursive "preinstall" target.
@@ -72,6 +73,7 @@ preinstall:
 
 # The main recursive "clean" target.
 clean: CMakeFiles/drones.dir/clean
+clean: CMakeFiles/SR.dir/clean
 .PHONY : clean
 
 #=============================================================================
@@ -81,7 +83,7 @@ clean: CMakeFiles/drones.dir/clean
 CMakeFiles/drones.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/drones.dir/build.make CMakeFiles/drones.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/drones.dir/build.make CMakeFiles/drones.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/pepoberes/TP2/build/CMakeFiles --progress-num=1,2,3 "Built target drones"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/pepoberes/TP2/build/CMakeFiles --progress-num=3,4,5 "Built target drones"
 .PHONY : CMakeFiles/drones.dir/all
 
 # Build rule for subdir invocation for target.
@@ -99,6 +101,32 @@ drones: CMakeFiles/drones.dir/rule
 CMakeFiles/drones.dir/clean:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/drones.dir/build.make CMakeFiles/drones.dir/clean
 .PHONY : CMakeFiles/drones.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/SR.dir
+
+# All Build rule for target.
+CMakeFiles/SR.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SR.dir/build.make CMakeFiles/SR.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SR.dir/build.make CMakeFiles/SR.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/pepoberes/TP2/build/CMakeFiles --progress-num=1,2 "Built target SR"
+.PHONY : CMakeFiles/SR.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/SR.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/pepoberes/TP2/build/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/SR.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/pepoberes/TP2/build/CMakeFiles 0
+.PHONY : CMakeFiles/SR.dir/rule
+
+# Convenience name for target.
+SR: CMakeFiles/SR.dir/rule
+.PHONY : SR
+
+# clean rule for target.
+CMakeFiles/SR.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SR.dir/build.make CMakeFiles/SR.dir/clean
+.PHONY : CMakeFiles/SR.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

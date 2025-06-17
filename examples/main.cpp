@@ -10,7 +10,7 @@ int main(){
     std::mutex print_mtx;
     std::vector<Drone> drones;
 
-    for (long unsigned int i = 0; i < n; i++){
+    for (unsigned long int i = 0; i < n; i++){
         drones.emplace_back(i, zones, print_mtx);
     }
 
@@ -18,8 +18,8 @@ int main(){
         threads.emplace_back(&Drone::fly, &drones[i]);
     }
 
-    for(auto& h : threads){
-        h.join();
+    for(auto& t : threads){
+        t.join();
     }
 
     return 0;

@@ -129,6 +129,43 @@ drones/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/drones.dir/build.make CMakeFiles/drones.dir/build
 .PHONY : drones/fast
 
+#=============================================================================
+# Target rules for targets named SR
+
+# Build rule for target.
+SR: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 SR
+.PHONY : SR
+
+# fast build rule for target.
+SR/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SR.dir/build.make CMakeFiles/SR.dir/build
+.PHONY : SR/fast
+
+examples/SMPRA.o: examples/SMPRA.cpp.o
+.PHONY : examples/SMPRA.o
+
+# target to build an object file
+examples/SMPRA.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SR.dir/build.make CMakeFiles/SR.dir/examples/SMPRA.cpp.o
+.PHONY : examples/SMPRA.cpp.o
+
+examples/SMPRA.i: examples/SMPRA.cpp.i
+.PHONY : examples/SMPRA.i
+
+# target to preprocess a source file
+examples/SMPRA.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SR.dir/build.make CMakeFiles/SR.dir/examples/SMPRA.cpp.i
+.PHONY : examples/SMPRA.cpp.i
+
+examples/SMPRA.s: examples/SMPRA.cpp.s
+.PHONY : examples/SMPRA.s
+
+# target to generate assembly for a file
+examples/SMPRA.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SR.dir/build.make CMakeFiles/SR.dir/examples/SMPRA.cpp.s
+.PHONY : examples/SMPRA.cpp.s
+
 examples/main.o: examples/main.cpp.o
 .PHONY : examples/main.o
 
@@ -185,7 +222,11 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
+	@echo "... SR"
 	@echo "... drones"
+	@echo "... examples/SMPRA.o"
+	@echo "... examples/SMPRA.i"
+	@echo "... examples/SMPRA.s"
 	@echo "... examples/main.o"
 	@echo "... examples/main.i"
 	@echo "... examples/main.s"
