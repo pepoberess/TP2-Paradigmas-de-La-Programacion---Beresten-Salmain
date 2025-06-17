@@ -69,28 +69,28 @@ include CMakeFiles/SR.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/SR.dir/flags.make
 
-CMakeFiles/SR.dir/examples/SMPRA.cpp.o: CMakeFiles/SR.dir/flags.make
-CMakeFiles/SR.dir/examples/SMPRA.cpp.o: /home/pepoberes/TP2/examples/SMPRA.cpp
-CMakeFiles/SR.dir/examples/SMPRA.cpp.o: CMakeFiles/SR.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/pepoberes/TP2/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/SR.dir/examples/SMPRA.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/SR.dir/examples/SMPRA.cpp.o -MF CMakeFiles/SR.dir/examples/SMPRA.cpp.o.d -o CMakeFiles/SR.dir/examples/SMPRA.cpp.o -c /home/pepoberes/TP2/examples/SMPRA.cpp
+CMakeFiles/SR.dir/examples/EJ3/main.cpp.o: CMakeFiles/SR.dir/flags.make
+CMakeFiles/SR.dir/examples/EJ3/main.cpp.o: /home/pepoberes/TP2/examples/EJ3/main.cpp
+CMakeFiles/SR.dir/examples/EJ3/main.cpp.o: CMakeFiles/SR.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/pepoberes/TP2/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/SR.dir/examples/EJ3/main.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/SR.dir/examples/EJ3/main.cpp.o -MF CMakeFiles/SR.dir/examples/EJ3/main.cpp.o.d -o CMakeFiles/SR.dir/examples/EJ3/main.cpp.o -c /home/pepoberes/TP2/examples/EJ3/main.cpp
 
-CMakeFiles/SR.dir/examples/SMPRA.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/SR.dir/examples/SMPRA.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/pepoberes/TP2/examples/SMPRA.cpp > CMakeFiles/SR.dir/examples/SMPRA.cpp.i
+CMakeFiles/SR.dir/examples/EJ3/main.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/SR.dir/examples/EJ3/main.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/pepoberes/TP2/examples/EJ3/main.cpp > CMakeFiles/SR.dir/examples/EJ3/main.cpp.i
 
-CMakeFiles/SR.dir/examples/SMPRA.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/SR.dir/examples/SMPRA.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/pepoberes/TP2/examples/SMPRA.cpp -o CMakeFiles/SR.dir/examples/SMPRA.cpp.s
+CMakeFiles/SR.dir/examples/EJ3/main.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/SR.dir/examples/EJ3/main.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/pepoberes/TP2/examples/EJ3/main.cpp -o CMakeFiles/SR.dir/examples/EJ3/main.cpp.s
 
 # Object files for target SR
 SR_OBJECTS = \
-"CMakeFiles/SR.dir/examples/SMPRA.cpp.o"
+"CMakeFiles/SR.dir/examples/EJ3/main.cpp.o"
 
 # External object files for target SR
 SR_EXTERNAL_OBJECTS =
 
-SR: CMakeFiles/SR.dir/examples/SMPRA.cpp.o
+SR: CMakeFiles/SR.dir/examples/EJ3/main.cpp.o
 SR: CMakeFiles/SR.dir/build.make
 SR: CMakeFiles/SR.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/pepoberes/TP2/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable SR"

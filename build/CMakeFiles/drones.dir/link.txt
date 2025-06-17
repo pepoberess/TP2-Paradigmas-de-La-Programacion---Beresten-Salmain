@@ -1,1 +1,1 @@
-/usr/bin/c++ CMakeFiles/drones.dir/examples/main.cpp.o CMakeFiles/drones.dir/src/Drone.cpp.o -o drones 
+/usr/bin/c++ CMakeFiles/drones.dir/examples/EJ2/main.cpp.o CMakeFiles/drones.dir/sources/EJ2/Drone.cpp.o -o drones 

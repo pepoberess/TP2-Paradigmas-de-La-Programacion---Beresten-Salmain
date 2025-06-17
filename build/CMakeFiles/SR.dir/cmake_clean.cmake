@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/SR.dir/examples/SMPRA.cpp.o"
-  "CMakeFiles/SR.dir/examples/SMPRA.cpp.o.d"
+  "CMakeFiles/SR.dir/examples/EJ3/main.cpp.o"
+  "CMakeFiles/SR.dir/examples/EJ3/main.cpp.o.d"
   "SR"
   "SR.pdb"
 )

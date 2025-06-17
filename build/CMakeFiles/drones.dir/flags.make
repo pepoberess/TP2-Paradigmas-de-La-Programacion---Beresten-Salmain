@@ -4,7 +4,7 @@
 # compile CXX with /usr/bin/c++
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/home/pepoberes/TP2/headers
+CXX_INCLUDES = -I/home/pepoberes/TP2/headers/EJ1 -I/home/pepoberes/TP2/headers/EJ2
 
 CXX_FLAGS = -std=gnu++20 -Wall -Wextra -Wpedantic -Wconversion -Wsign-conversion -Wshadow -Wnull-dereference -Wdouble-promotion -Wformat=2 -Wmisleading-indentation -Wunused -Wnon-virtual-dtor -Woverloaded-virtual -Wduplicated-cond -Wduplicated-branches -Wlogical-op -Wold-style-cast -Wuseless-cast -Wzero-as-null-pointer-constant -Wextra-semi -Wcast-align -Wundef
 

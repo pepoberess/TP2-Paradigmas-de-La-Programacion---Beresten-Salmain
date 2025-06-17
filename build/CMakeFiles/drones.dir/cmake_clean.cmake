@@ -1,8 +1,8 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/drones.dir/examples/main.cpp.o"
-  "CMakeFiles/drones.dir/examples/main.cpp.o.d"
-  "CMakeFiles/drones.dir/src/Drone.cpp.o"
-  "CMakeFiles/drones.dir/src/Drone.cpp.o.d"
+  "CMakeFiles/drones.dir/examples/EJ2/main.cpp.o"
+  "CMakeFiles/drones.dir/examples/EJ2/main.cpp.o.d"
+  "CMakeFiles/drones.dir/sources/EJ2/Drone.cpp.o"
+  "CMakeFiles/drones.dir/sources/EJ2/Drone.cpp.o.d"
   "drones"
   "drones.pdb"
 )

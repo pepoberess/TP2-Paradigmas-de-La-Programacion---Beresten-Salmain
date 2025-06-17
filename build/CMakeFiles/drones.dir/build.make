@@ -69,44 +69,44 @@ include CMakeFiles/drones.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/drones.dir/flags.make
 
-CMakeFiles/drones.dir/examples/main.cpp.o: CMakeFiles/drones.dir/flags.make
-CMakeFiles/drones.dir/examples/main.cpp.o: /home/pepoberes/TP2/examples/main.cpp
-CMakeFiles/drones.dir/examples/main.cpp.o: CMakeFiles/drones.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/pepoberes/TP2/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/drones.dir/examples/main.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/drones.dir/examples/main.cpp.o -MF CMakeFiles/drones.dir/examples/main.cpp.o.d -o CMakeFiles/drones.dir/examples/main.cpp.o -c /home/pepoberes/TP2/examples/main.cpp
+CMakeFiles/drones.dir/examples/EJ2/main.cpp.o: CMakeFiles/drones.dir/flags.make
+CMakeFiles/drones.dir/examples/EJ2/main.cpp.o: /home/pepoberes/TP2/examples/EJ2/main.cpp
+CMakeFiles/drones.dir/examples/EJ2/main.cpp.o: CMakeFiles/drones.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/pepoberes/TP2/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/drones.dir/examples/EJ2/main.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/drones.dir/examples/EJ2/main.cpp.o -MF CMakeFiles/drones.dir/examples/EJ2/main.cpp.o.d -o CMakeFiles/drones.dir/examples/EJ2/main.cpp.o -c /home/pepoberes/TP2/examples/EJ2/main.cpp
 
-CMakeFiles/drones.dir/examples/main.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/drones.dir/examples/main.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/pepoberes/TP2/examples/main.cpp > CMakeFiles/drones.dir/examples/main.cpp.i
+CMakeFiles/drones.dir/examples/EJ2/main.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/drones.dir/examples/EJ2/main.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/pepoberes/TP2/examples/EJ2/main.cpp > CMakeFiles/drones.dir/examples/EJ2/main.cpp.i
 
-CMakeFiles/drones.dir/examples/main.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/drones.dir/examples/main.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/pepoberes/TP2/examples/main.cpp -o CMakeFiles/drones.dir/examples/main.cpp.s
+CMakeFiles/drones.dir/examples/EJ2/main.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/drones.dir/examples/EJ2/main.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/pepoberes/TP2/examples/EJ2/main.cpp -o CMakeFiles/drones.dir/examples/EJ2/main.cpp.s
 
-CMakeFiles/drones.dir/src/Drone.cpp.o: CMakeFiles/drones.dir/flags.make
-CMakeFiles/drones.dir/src/Drone.cpp.o: /home/pepoberes/TP2/src/Drone.cpp
-CMakeFiles/drones.dir/src/Drone.cpp.o: CMakeFiles/drones.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/pepoberes/TP2/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/drones.dir/src/Drone.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/drones.dir/src/Drone.cpp.o -MF CMakeFiles/drones.dir/src/Drone.cpp.o.d -o CMakeFiles/drones.dir/src/Drone.cpp.o -c /home/pepoberes/TP2/src/Drone.cpp
+CMakeFiles/drones.dir/sources/EJ2/Drone.cpp.o: CMakeFiles/drones.dir/flags.make
+CMakeFiles/drones.dir/sources/EJ2/Drone.cpp.o: /home/pepoberes/TP2/sources/EJ2/Drone.cpp
+CMakeFiles/drones.dir/sources/EJ2/Drone.cpp.o: CMakeFiles/drones.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/pepoberes/TP2/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/drones.dir/sources/EJ2/Drone.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/drones.dir/sources/EJ2/Drone.cpp.o -MF CMakeFiles/drones.dir/sources/EJ2/Drone.cpp.o.d -o CMakeFiles/drones.dir/sources/EJ2/Drone.cpp.o -c /home/pepoberes/TP2/sources/EJ2/Drone.cpp
 
-CMakeFiles/drones.dir/src/Drone.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/drones.dir/src/Drone.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/pepoberes/TP2/src/Drone.cpp > CMakeFiles/drones.dir/src/Drone.cpp.i
+CMakeFiles/drones.dir/sources/EJ2/Drone.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/drones.dir/sources/EJ2/Drone.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/pepoberes/TP2/sources/EJ2/Drone.cpp > CMakeFiles/drones.dir/sources/EJ2/Drone.cpp.i
 
-CMakeFiles/drones.dir/src/Drone.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/drones.dir/src/Drone.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/pepoberes/TP2/src/Drone.cpp -o CMakeFiles/drones.dir/src/Drone.cpp.s
+CMakeFiles/drones.dir/sources/EJ2/Drone.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/drones.dir/sources/EJ2/Drone.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/pepoberes/TP2/sources/EJ2/Drone.cpp -o CMakeFiles/drones.dir/sources/EJ2/Drone.cpp.s
 
 # Object files for target drones
 drones_OBJECTS = \
-"CMakeFiles/drones.dir/examples/main.cpp.o" \
-"CMakeFiles/drones.dir/src/Drone.cpp.o"
+"CMakeFiles/drones.dir/examples/EJ2/main.cpp.o" \
+"CMakeFiles/drones.dir/sources/EJ2/Drone.cpp.o"
 
 # External object files for target drones
 drones_EXTERNAL_OBJECTS =
 
-drones: CMakeFiles/drones.dir/examples/main.cpp.o
-drones: CMakeFiles/drones.dir/src/Drone.cpp.o
+drones: CMakeFiles/drones.dir/examples/EJ2/main.cpp.o
+drones: CMakeFiles/drones.dir/sources/EJ2/Drone.cpp.o
 drones: CMakeFiles/drones.dir/build.make
 drones: CMakeFiles/drones.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/pepoberes/TP2/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable drones"

@@ -87,8 +87,7 @@ int main(){
     for (auto& s : sensores) s.join();
     for (auto& r : robots) r.join();
 
-    std::cout << "Todas las tareas han sido procesadas!";
+    std::cout << "Todas las tareas han sido procesadas!" << std::endl;
 
     return 0;
-
 }

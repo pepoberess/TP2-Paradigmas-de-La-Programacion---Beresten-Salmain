@@ -4,7 +4,10 @@ project(TP2 CXX)
 set(CMAKE_CXX_STANDARD 20)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
-include_directories(headers)
+include_directories(
+    headers/EJ1
+    headers/EJ2
+)
 
 if (CMAKE_CXX_COMPILER_ID MATCHES "GNU|Clang")
     add_compile_options(
@@ -33,11 +36,18 @@ if (CMAKE_CXX_COMPILER_ID MATCHES "GNU|Clang")
     )
 endif()
 
+add_executable(pokemon
+    examples/EJ1/main.cpp
+    sources/EJ1/pokedex.cpp
+    sources/EJ1/pokemon.cpp
+    sources/EJ1/pokemonInfo.cpp
+)
+
 add_executable(drones
-    examples/main.cpp
-    src/Drone.cpp
+    examples/EJ2/main.cpp
+    sources/EJ2/Drone.cpp
 )
 
 add_executable(SR
-    examples/SMPRA.cpp
+    examples/EJ3/main.cpp
 )

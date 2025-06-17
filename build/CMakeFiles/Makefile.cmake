@@ -40,6 +40,7 @@ set(CMAKE_MAKEFILE_PRODUCTS
 
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
+  "CMakeFiles/pokemon.dir/DependInfo.cmake"
   "CMakeFiles/drones.dir/DependInfo.cmake"
   "CMakeFiles/SR.dir/DependInfo.cmake"
   )

@@ -117,6 +117,19 @@ depend:
 .PHONY : depend
 
 #=============================================================================
+# Target rules for targets named pokemon
+
+# Build rule for target.
+pokemon: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 pokemon
+.PHONY : pokemon
+
+# fast build rule for target.
+pokemon/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pokemon.dir/build.make CMakeFiles/pokemon.dir/build
+.PHONY : pokemon/fast
+
+#=============================================================================
 # Target rules for targets named drones
 
 # Build rule for target.
@@ -142,77 +155,173 @@ SR/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/SR.dir/build.make CMakeFiles/SR.dir/build
 .PHONY : SR/fast
 
-examples/SMPRA.o: examples/SMPRA.cpp.o
-.PHONY : examples/SMPRA.o
+examples/EJ1/main.o: examples/EJ1/main.cpp.o
+.PHONY : examples/EJ1/main.o
 
 # target to build an object file
-examples/SMPRA.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/SR.dir/build.make CMakeFiles/SR.dir/examples/SMPRA.cpp.o
-.PHONY : examples/SMPRA.cpp.o
+examples/EJ1/main.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pokemon.dir/build.make CMakeFiles/pokemon.dir/examples/EJ1/main.cpp.o
+.PHONY : examples/EJ1/main.cpp.o
 
-examples/SMPRA.i: examples/SMPRA.cpp.i
-.PHONY : examples/SMPRA.i
+examples/EJ1/main.i: examples/EJ1/main.cpp.i
+.PHONY : examples/EJ1/main.i
 
 # target to preprocess a source file
-examples/SMPRA.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/SR.dir/build.make CMakeFiles/SR.dir/examples/SMPRA.cpp.i
-.PHONY : examples/SMPRA.cpp.i
+examples/EJ1/main.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pokemon.dir/build.make CMakeFiles/pokemon.dir/examples/EJ1/main.cpp.i
+.PHONY : examples/EJ1/main.cpp.i
 
-examples/SMPRA.s: examples/SMPRA.cpp.s
-.PHONY : examples/SMPRA.s
+examples/EJ1/main.s: examples/EJ1/main.cpp.s
+.PHONY : examples/EJ1/main.s
 
 # target to generate assembly for a file
-examples/SMPRA.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/SR.dir/build.make CMakeFiles/SR.dir/examples/SMPRA.cpp.s
-.PHONY : examples/SMPRA.cpp.s
+examples/EJ1/main.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pokemon.dir/build.make CMakeFiles/pokemon.dir/examples/EJ1/main.cpp.s
+.PHONY : examples/EJ1/main.cpp.s
 
-examples/main.o: examples/main.cpp.o
-.PHONY : examples/main.o
+examples/EJ2/main.o: examples/EJ2/main.cpp.o
+.PHONY : examples/EJ2/main.o
 
 # target to build an object file
-examples/main.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/drones.dir/build.make CMakeFiles/drones.dir/examples/main.cpp.o
-.PHONY : examples/main.cpp.o
+examples/EJ2/main.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/drones.dir/build.make CMakeFiles/drones.dir/examples/EJ2/main.cpp.o
+.PHONY : examples/EJ2/main.cpp.o
 
-examples/main.i: examples/main.cpp.i
-.PHONY : examples/main.i
+examples/EJ2/main.i: examples/EJ2/main.cpp.i
+.PHONY : examples/EJ2/main.i
 
 # target to preprocess a source file
-examples/main.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/drones.dir/build.make CMakeFiles/drones.dir/examples/main.cpp.i
-.PHONY : examples/main.cpp.i
+examples/EJ2/main.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/drones.dir/build.make CMakeFiles/drones.dir/examples/EJ2/main.cpp.i
+.PHONY : examples/EJ2/main.cpp.i
 
-examples/main.s: examples/main.cpp.s
-.PHONY : examples/main.s
+examples/EJ2/main.s: examples/EJ2/main.cpp.s
+.PHONY : examples/EJ2/main.s
 
 # target to generate assembly for a file
-examples/main.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/drones.dir/build.make CMakeFiles/drones.dir/examples/main.cpp.s
-.PHONY : examples/main.cpp.s
+examples/EJ2/main.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/drones.dir/build.make CMakeFiles/drones.dir/examples/EJ2/main.cpp.s
+.PHONY : examples/EJ2/main.cpp.s
 
-src/Drone.o: src/Drone.cpp.o
-.PHONY : src/Drone.o
+examples/EJ3/main.o: examples/EJ3/main.cpp.o
+.PHONY : examples/EJ3/main.o
 
 # target to build an object file
-src/Drone.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/drones.dir/build.make CMakeFiles/drones.dir/src/Drone.cpp.o
-.PHONY : src/Drone.cpp.o
+examples/EJ3/main.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SR.dir/build.make CMakeFiles/SR.dir/examples/EJ3/main.cpp.o
+.PHONY : examples/EJ3/main.cpp.o
 
-src/Drone.i: src/Drone.cpp.i
-.PHONY : src/Drone.i
+examples/EJ3/main.i: examples/EJ3/main.cpp.i
+.PHONY : examples/EJ3/main.i
 
 # target to preprocess a source file
-src/Drone.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/drones.dir/build.make CMakeFiles/drones.dir/src/Drone.cpp.i
-.PHONY : src/Drone.cpp.i
+examples/EJ3/main.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SR.dir/build.make CMakeFiles/SR.dir/examples/EJ3/main.cpp.i
+.PHONY : examples/EJ3/main.cpp.i
 
-src/Drone.s: src/Drone.cpp.s
-.PHONY : src/Drone.s
+examples/EJ3/main.s: examples/EJ3/main.cpp.s
+.PHONY : examples/EJ3/main.s
 
 # target to generate assembly for a file
-src/Drone.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/drones.dir/build.make CMakeFiles/drones.dir/src/Drone.cpp.s
-.PHONY : src/Drone.cpp.s
+examples/EJ3/main.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SR.dir/build.make CMakeFiles/SR.dir/examples/EJ3/main.cpp.s
+.PHONY : examples/EJ3/main.cpp.s
+
+sources/EJ1/pokedex.o: sources/EJ1/pokedex.cpp.o
+.PHONY : sources/EJ1/pokedex.o
+
+# target to build an object file
+sources/EJ1/pokedex.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pokemon.dir/build.make CMakeFiles/pokemon.dir/sources/EJ1/pokedex.cpp.o
+.PHONY : sources/EJ1/pokedex.cpp.o
+
+sources/EJ1/pokedex.i: sources/EJ1/pokedex.cpp.i
+.PHONY : sources/EJ1/pokedex.i
+
+# target to preprocess a source file
+sources/EJ1/pokedex.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pokemon.dir/build.make CMakeFiles/pokemon.dir/sources/EJ1/pokedex.cpp.i
+.PHONY : sources/EJ1/pokedex.cpp.i
+
+sources/EJ1/pokedex.s: sources/EJ1/pokedex.cpp.s
+.PHONY : sources/EJ1/pokedex.s
+
+# target to generate assembly for a file
+sources/EJ1/pokedex.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pokemon.dir/build.make CMakeFiles/pokemon.dir/sources/EJ1/pokedex.cpp.s
+.PHONY : sources/EJ1/pokedex.cpp.s
+
+sources/EJ1/pokemon.o: sources/EJ1/pokemon.cpp.o
+.PHONY : sources/EJ1/pokemon.o
+
+# target to build an object file
+sources/EJ1/pokemon.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pokemon.dir/build.make CMakeFiles/pokemon.dir/sources/EJ1/pokemon.cpp.o
+.PHONY : sources/EJ1/pokemon.cpp.o
+
+sources/EJ1/pokemon.i: sources/EJ1/pokemon.cpp.i
+.PHONY : sources/EJ1/pokemon.i
+
+# target to preprocess a source file
+sources/EJ1/pokemon.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pokemon.dir/build.make CMakeFiles/pokemon.dir/sources/EJ1/pokemon.cpp.i
+.PHONY : sources/EJ1/pokemon.cpp.i
+
+sources/EJ1/pokemon.s: sources/EJ1/pokemon.cpp.s
+.PHONY : sources/EJ1/pokemon.s
+
+# target to generate assembly for a file
+sources/EJ1/pokemon.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pokemon.dir/build.make CMakeFiles/pokemon.dir/sources/EJ1/pokemon.cpp.s
+.PHONY : sources/EJ1/pokemon.cpp.s
+
+sources/EJ1/pokemonInfo.o: sources/EJ1/pokemonInfo.cpp.o
+.PHONY : sources/EJ1/pokemonInfo.o
+
+# target to build an object file
+sources/EJ1/pokemonInfo.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pokemon.dir/build.make CMakeFiles/pokemon.dir/sources/EJ1/pokemonInfo.cpp.o
+.PHONY : sources/EJ1/pokemonInfo.cpp.o
+
+sources/EJ1/pokemonInfo.i: sources/EJ1/pokemonInfo.cpp.i
+.PHONY : sources/EJ1/pokemonInfo.i
+
+# target to preprocess a source file
+sources/EJ1/pokemonInfo.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pokemon.dir/build.make CMakeFiles/pokemon.dir/sources/EJ1/pokemonInfo.cpp.i
+.PHONY : sources/EJ1/pokemonInfo.cpp.i
+
+sources/EJ1/pokemonInfo.s: sources/EJ1/pokemonInfo.cpp.s
+.PHONY : sources/EJ1/pokemonInfo.s
+
+# target to generate assembly for a file
+sources/EJ1/pokemonInfo.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pokemon.dir/build.make CMakeFiles/pokemon.dir/sources/EJ1/pokemonInfo.cpp.s
+.PHONY : sources/EJ1/pokemonInfo.cpp.s
+
+sources/EJ2/Drone.o: sources/EJ2/Drone.cpp.o
+.PHONY : sources/EJ2/Drone.o
+
+# target to build an object file
+sources/EJ2/Drone.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/drones.dir/build.make CMakeFiles/drones.dir/sources/EJ2/Drone.cpp.o
+.PHONY : sources/EJ2/Drone.cpp.o
+
+sources/EJ2/Drone.i: sources/EJ2/Drone.cpp.i
+.PHONY : sources/EJ2/Drone.i
+
+# target to preprocess a source file
+sources/EJ2/Drone.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/drones.dir/build.make CMakeFiles/drones.dir/sources/EJ2/Drone.cpp.i
+.PHONY : sources/EJ2/Drone.cpp.i
+
+sources/EJ2/Drone.s: sources/EJ2/Drone.cpp.s
+.PHONY : sources/EJ2/Drone.s
+
+# target to generate assembly for a file
+sources/EJ2/Drone.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/drones.dir/build.make CMakeFiles/drones.dir/sources/EJ2/Drone.cpp.s
+.PHONY : sources/EJ2/Drone.cpp.s
 
 # Help Target
 help:
@@ -224,15 +333,28 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... SR"
 	@echo "... drones"
-	@echo "... examples/SMPRA.o"
-	@echo "... examples/SMPRA.i"
-	@echo "... examples/SMPRA.s"
-	@echo "... examples/main.o"
-	@echo "... examples/main.i"
-	@echo "... examples/main.s"
-	@echo "... src/Drone.o"
-	@echo "... src/Drone.i"
-	@echo "... src/Drone.s"
+	@echo "... pokemon"
+	@echo "... examples/EJ1/main.o"
+	@echo "... examples/EJ1/main.i"
+	@echo "... examples/EJ1/main.s"
+	@echo "... examples/EJ2/main.o"
+	@echo "... examples/EJ2/main.i"
+	@echo "... examples/EJ2/main.s"
+	@echo "... examples/EJ3/main.o"
+	@echo "... examples/EJ3/main.i"
+	@echo "... examples/EJ3/main.s"
+	@echo "... sources/EJ1/pokedex.o"
+	@echo "... sources/EJ1/pokedex.i"
+	@echo "... sources/EJ1/pokedex.s"
+	@echo "... sources/EJ1/pokemon.o"
+	@echo "... sources/EJ1/pokemon.i"
+	@echo "... sources/EJ1/pokemon.s"
+	@echo "... sources/EJ1/pokemonInfo.o"
+	@echo "... sources/EJ1/pokemonInfo.i"
+	@echo "... sources/EJ1/pokemonInfo.s"
+	@echo "... sources/EJ2/Drone.o"
+	@echo "... sources/EJ2/Drone.i"
+	@echo "... sources/EJ2/Drone.s"
 .PHONY : help
 
 

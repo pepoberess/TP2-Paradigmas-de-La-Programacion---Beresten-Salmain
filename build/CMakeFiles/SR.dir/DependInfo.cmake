@@ -8,7 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/pepoberes/TP2/examples/SMPRA.cpp" "CMakeFiles/SR.dir/examples/SMPRA.cpp.o" "gcc" "CMakeFiles/SR.dir/examples/SMPRA.cpp.o.d"
+  "/home/pepoberes/TP2/examples/EJ3/main.cpp" "CMakeFiles/SR.dir/examples/EJ3/main.cpp.o" "gcc" "CMakeFiles/SR.dir/examples/EJ3/main.cpp.o.d"
   )
 
 # Targets to which this target links which contain Fortran sources.

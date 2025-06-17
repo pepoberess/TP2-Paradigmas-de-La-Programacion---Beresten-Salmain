@@ -1,0 +1,1 @@
+/usr/bin/c++ CMakeFiles/pokemon.dir/examples/EJ1/main.cpp.o CMakeFiles/pokemon.dir/sources/EJ1/pokedex.cpp.o CMakeFiles/pokemon.dir/sources/EJ1/pokemon.cpp.o CMakeFiles/pokemon.dir/sources/EJ1/pokemonInfo.cpp.o -o pokemon 

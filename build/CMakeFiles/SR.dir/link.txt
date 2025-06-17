@@ -1,1 +1,1 @@
-/usr/bin/c++ CMakeFiles/SR.dir/examples/SMPRA.cpp.o -o SR 
+/usr/bin/c++ CMakeFiles/SR.dir/examples/EJ3/main.cpp.o -o SR 
