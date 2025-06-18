@@ -1,5 +1,4 @@
-#ifndef POKEDEX_H
-#define POKEDEX_H
+#pragma once
 
 #include "pokemon.hpp"
 #include "pokemonInfo.hpp"
@@ -19,6 +18,8 @@ private:
 
     void cargarArchivo(); // carga los datos desde el archivo al iniciar la Pokedex                        
     void guardarArchivo(const Pokemon&, const PokemonInfo&); // guarda un Pokémon y su información en el archivo
+    void serializar(const Pokemon& pokemon, const PokemonInfo& info, std::ofstream& out); // serializa un Pokémon y su información en un archivo
+    bool deserializar(std::ifstream& in, Pokemon& pokemon, PokemonInfo& info); // deserializa un Pokémon y su información desde un archivo
 
 public:
     Pokedex() = default; // constructor por defecto
@@ -28,5 +29,3 @@ public:
     void mostrar(const Pokemon& pokemon) const; // muestra la información de un Pokémon específico, si está registrado
     void mostrarTodos() const; // muestra la información de todos los Pokémon registrados en la base de datos
 };
-
-#endif
