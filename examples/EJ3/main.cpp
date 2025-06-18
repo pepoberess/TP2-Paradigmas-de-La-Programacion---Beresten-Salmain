@@ -42,7 +42,7 @@ void Reportar(int idSensor){
             tareas.push(tarea);
         }
 
-        cvCola.notify_one(); // Vvisa que hay una nueva tarea
+        cvCola.notify_one(); // Avisa que hay una nueva tarea
 
         std::this_thread::sleep_for(std::chrono::milliseconds(175)); // Simula el tiempo que tarda el sensor en generar una tarea.
     }
