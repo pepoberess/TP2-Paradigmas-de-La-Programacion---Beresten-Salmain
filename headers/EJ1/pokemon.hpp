@@ -14,6 +14,7 @@ class Pokemon {
 
     public:
         Pokemon(const std::string& name, int experience); // Constructor que inicializa el nombre y la experiencia del Pokémon
+        Pokemon() = default;
         std::string getName() const; // Obtiene el nombre del Pokémon
         int getExperience() const; // Obtiene la experiencia del Pokémon
 

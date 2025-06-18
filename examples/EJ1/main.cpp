@@ -4,7 +4,7 @@
 int main() {
     // Este ejemplo muestra cómo usar la clase Pokedex para agregar y mostrar Pokémon.
     // Se crean varios Pokémon con sus respectivas informaciones y se almacenan en un archivo.
-    Pokedex pokedex("pokedex.txt"); // Inicializa la Pokedex con un archivo para guardar los datos.
+    Pokedex pokedex("pokedex.bin"); // Inicializa la Pokedex con un archivo para guardar los datos.
 
     pokedex.agregarPokemon( // Agrega un Pokémon Squirtle a la Pokedex.
         Pokemon("Squirtle", 100), //Crea un Pokémon Squirtle con 100 de experiencia.

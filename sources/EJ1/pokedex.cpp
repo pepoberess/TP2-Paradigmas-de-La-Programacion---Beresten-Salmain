@@ -21,7 +21,7 @@ void Pokedex::serializar(const Pokemon& pokemon, const PokemonInfo& info, std::o
     std::string nombre = pokemon.getName();
     size_t nombreLen = nombre.size();
     out.write(reinterpret_cast<const char*>(&nombreLen), sizeof(nombreLen));
-    out.write(nombre.c_str(), nombreLen);
+    out.write(nombre.c_str(), static_cast<std::streamsize>(nombreLen));
 
     // Serializa la experiencia
     int experiencia = pokemon.getExperience();
@@ -31,13 +31,13 @@ void Pokedex::serializar(const Pokemon& pokemon, const PokemonInfo& info, std::o
     std::string tipo = info.getType();
     size_t tipoLen = tipo.size();
     out.write(reinterpret_cast<const char*>(&tipoLen), sizeof(tipoLen));
-    out.write(tipo.c_str(), tipoLen);
+    out.write(tipo.c_str(), static_cast<std::streamsize>(tipoLen));
 
     // Serializa la descripción
     std::string descripcion = info.getDescription();
     size_t descLen = descripcion.size();
     out.write(reinterpret_cast<const char*>(&descLen), sizeof(descLen));
-    out.write(descripcion.c_str(), descLen);
+    out.write(descripcion.c_str(), static_cast<std::streamsize>(descLen));
 
     // Serializa los ataques (asume 3 ataques)
     const auto& ataques = info.getAtacks();
@@ -46,7 +46,7 @@ void Pokedex::serializar(const Pokemon& pokemon, const PokemonInfo& info, std::o
     for (const auto& [nombreAtaque, dano] : ataques) {
         size_t nombreAtaqueLen = nombreAtaque.size();
         out.write(reinterpret_cast<const char*>(&nombreAtaqueLen), sizeof(nombreAtaqueLen));
-        out.write(nombreAtaque.c_str(), nombreAtaqueLen);
+        out.write(nombreAtaque.c_str(), static_cast<std::streamsize>(nombreAtaqueLen));
         out.write(reinterpret_cast<const char*>(&dano), sizeof(dano));
     }
 
@@ -65,7 +65,7 @@ bool Pokedex::deserializar(std::ifstream& in, Pokemon& pokemon, PokemonInfo& inf
     in.read(reinterpret_cast<char*>(&nombreLen), sizeof(nombreLen));
     if (in.eof()) return false; // Verifica si se llegó al final del archivo
     std::string nombre(nombreLen, '\0');
-    in.read(&nombre[0], nombreLen);
+    in.read(&nombre[0], static_cast<std::streamsize>(nombreLen));
 
     // Lee la experiencia
     int experiencia;
@@ -75,13 +75,13 @@ bool Pokedex::deserializar(std::ifstream& in, Pokemon& pokemon, PokemonInfo& inf
     size_t tipoLen;
     in.read(reinterpret_cast<char*>(&tipoLen), sizeof(tipoLen));
     std::string tipo(tipoLen, '\0');
-    in.read(&tipo[0], tipoLen);
+    in.read(&tipo[0], static_cast<std::streamsize>(tipoLen));
 
     // Lee la descripción
     size_t descLen;
     in.read(reinterpret_cast<char*>(&descLen), sizeof(descLen));
     std::string descripcion(descLen, '\0');
-    in.read(&descripcion[0], descLen);
+    in.read(&descripcion[0], static_cast<std::streamsize>(descLen));
 
     // Lee los ataques
     size_t numAtaques;
@@ -91,7 +91,7 @@ bool Pokedex::deserializar(std::ifstream& in, Pokemon& pokemon, PokemonInfo& inf
         size_t nombreAtaqueLen;
         in.read(reinterpret_cast<char*>(&nombreAtaqueLen), sizeof(nombreAtaqueLen));
         std::string nombreAtaque(nombreAtaqueLen, '\0');
-        in.read(&nombreAtaque[0], nombreAtaqueLen);
+        in.read(&nombreAtaque[0], static_cast<std::streamsize>(nombreAtaqueLen));
         int dano;
         in.read(reinterpret_cast<char*>(&dano), sizeof(dano));
         ataques[nombreAtaque] = dano;
@@ -109,71 +109,7 @@ bool Pokedex::deserializar(std::ifstream& in, Pokemon& pokemon, PokemonInfo& inf
 
     return true;
 }
-/*
-void Pokedex::cargarArchivo() { 
-    // Carga los datos desde el archivo al iniciar la Pokedex.
-    std::ifstream in(archivo); //Abre el archivo 
-    if (!in.is_open()) return; // Si no se puede abrir el archivo, no hace nada.
 
-    std::string linea;
-    while (std::getline(in, linea)) { // Lee cada línea del archivo
-        std::stringstream ss(linea);
-        std::string nombre, tipo, descripcion;
-        int experiencia;
-        std::getline(ss, nombre, ','); // Obtiene el nombre del Pokémon hasta la coma
-        ss >> experiencia; // Obtiene la experiencia del Pokémon
-        ss.ignore(1); // Ignora la coma siguiente
-        std::getline(ss, tipo, ','); // Obtiene el tipo del Pokémon hasta la coma
-        std::getline(ss, descripcion, ','); // Obtiene la descripción del Pokémon hasta la coma
-
-        std::unordered_map<std::string, int> ataques;
-        for (int i = 0; i < 3; ++i) { // Lee hasta 3 ataques del Pokémon
-            std::string ataque; 
-            int dano;
-            std::getline(ss, ataque, ':'); // Obtiene el nombre del ataque hasta los dos puntos
-            ss >> dano; // Obtiene el daño del ataque
-            ss.ignore(1); // Ignora la coma siguiente
-            ataques[ataque] = dano; // Almacena el ataque y su daño en el mapa
-        }
-
-        std::array<int, 3> niveles; 
-        for (long unsigned int i = 0; i < 3; ++i) { // Lee los niveles de experiencia del Pokémon
-            ss >> niveles[i]; 
-            if (i < 2) ss.ignore(1); // Ignora la coma siguiente, excepto para el último nivel
-        }
-
-        Pokemon p(nombre, experiencia); // Crea un objeto Pokémon con el nombre y la experiencia leída
-        PokemonInfo info(tipo, descripcion, ataques, niveles); // Crea un objeto PokemonInfo con el tipo, 
-                                                               // descripción, ataques y niveles leídos
-        baseDatos[p] = info; // Almacena el Pokémon y su información en la base de datos
-    }
-    in.close(); // Cierra el archivo después de leer todos los datos.
-}
-
-void Pokedex::guardarArchivo(const Pokemon& pokemon, const PokemonInfo& info) {
-    // Guarda un Pokémon y su información en el archivo.
-    if (archivo.empty()) return;
-    std::ofstream out(archivo, std::ios::app); // Abre el archivo en modo de adición (append)
-    if (!out.is_open()) return;
-
-    // Escribe los datos del Pokémon en el formato: nombre, experiencia, tipo, descripción, ataques y niveles de experiencia
-    out << pokemon.getName() << "," << pokemon.getExperience() << ","
-        << info.getType() << "," << info.getDescription() << ",";
-
-    int count = 0;
-    for (const auto& [nombre, dano] : info.getAtacks()) { // Recorre los ataques del Pokémon
-        out << nombre << ":" << dano; // Escribe el nombre del ataque y su daño
-        if (++count < 3) out << ",";
-    }
-    out << ",";
-
-    const auto& niveles = info.getXPlevels();
-    out << niveles[0] << "," << niveles[1] << "," << niveles[2] << "\n";
-
-    out.close(); // Cierra el archivo después de escribir los datos.
-}
-
-*/
 
 void Pokedex::agregarPokemon(const Pokemon& pokemon, const PokemonInfo& info) { 
     // Agrega un Pokémon y su información a la base de datos y lo guarda en el archivo.

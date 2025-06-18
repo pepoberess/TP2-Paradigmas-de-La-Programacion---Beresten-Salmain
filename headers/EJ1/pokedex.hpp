@@ -16,8 +16,6 @@ private:
     std::unordered_map<Pokemon, PokemonInfo, PokemonHash> baseDatos;  // mapa hash que almacena Pokémon y su información
     std::string archivo; // nombre del archivo donde se guardan los datos
 
-    void cargarArchivo(); // carga los datos desde el archivo al iniciar la Pokedex                        
-    void guardarArchivo(const Pokemon&, const PokemonInfo&); // guarda un Pokémon y su información en el archivo
     void serializar(const Pokemon& pokemon, const PokemonInfo& info, std::ofstream& out); // serializa un Pokémon y su información en un archivo
     bool deserializar(std::ifstream& in, Pokemon& pokemon, PokemonInfo& info); // deserializa un Pokémon y su información desde un archivo
 

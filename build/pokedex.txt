@@ -1,3 +1,0 @@
-Squirtle,100,Agua,Una tortuga pequena que lanza chorros de agua.,Hidrobomba:6,Danza Lluvia:5,Pistola Agua:4,0,400,1000
-Bulbasaur,270,Planta,Tiene una semilla en su lomo que crece con el tiempo,Rayo Solar:5,Hoja Afilada:6,Latigazo:4,0,300,1100
-Charmander,633,Fuego,Una lagartija con una llama en su cola,Giro Fuego:5,Lanzallamas:6,Ascuas:4,0,250,1300
